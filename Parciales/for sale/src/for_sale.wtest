@@ -1,0 +1,30 @@
+import for_sale.*
+
+describe "tests parcial for sale"{ 
+	
+	const casa
+	const depto
+	const ph
+	const palermo
+	const moron
+	const hermanosPirulo
+	const cacho
+	const pepe
+	
+	fixture{
+		palermo = new Zona(adicionalPorZona = 0.30)
+		moron = new Zona(adicionalPorZona = 0)
+		casa = new Casa(valorBase = 10000,tamanio = 0,ambientes = 0,puedeVenderse = true,zona = moron,operacion = new Venta(inmobiliaria = hermanosPirulo,estado=abierta))
+		depto = new Departamento(tamanio = 10,ambientes = 2,zona = palermo,puedeVenderse = true, operacion = new Alquiler(inmobiliaria = hermanosPirulo,estado=abierta,duracionContrato=24))
+		ph = new PH(tamanio = 50, ambientes = 3, zona = palermo, puedeVenderse = true, operacion = new Alquiler(inmobiliaria = hermanosPirulo,estado=abierta))
+		hermanosPirulo = new Inmobiliaria(comisionFijaPorVenta = 0.05, empleados = [cacho,pepe])
+		cacho = new Empleado()
+		pepe = new Empleado()
+	}
+	
+	
+	test "Saber cual es la comision de una operacion concretada" {
+	//assert.equals(,)
+	}
+	
+}
