@@ -1,0 +1,27 @@
+import disfraces.*
+
+describe "Tests de parcial disfraces"{
+	
+	const pepe
+	const laura
+	const nico
+	const disfrazDeMono
+	const disfrazDeMaid
+	const disfrazDeMickey
+	
+	fixture {
+		pepe = new Invitado(disfraz = disfrazDeMono,edad = 60,personalidad = alegre,tipo = caprichoso)
+		laura = new Invitado(disfraz = disfrazDeMaid,edad = 24,personalidad = taciturna,tipo = pretencioso)
+		nico = new Invitado(disfraz = disfrazDeMickey,edad = 30,personalidad = taciturna,tipo = new Numerologo(cifraPreferida = 16))
+		disfrazDeMono = new Disfraz(nombre = "Mono",fechaConfeccion =  new Date(),caracteristicas = [new Gracioso(nivelDeGracia = 10)])
+		disfrazDeMaid = new Disfraz(nombre = "Maid sexy",fechaConfeccion = new Date(),caracteristicas = [new Sexy()])
+		disfrazDeMickey = new Disfraz(nombre = "Mickey",fechaConfeccion = new Date(),caracteristicas = [new Gracioso(nivelDeGracia = 3), new Tobara(fechaCompra = new Date(21,11,2018))])	
+	}
+	
+	//a terminar
+	test "El disfraz de pepe tiene un puntaje de " {
+		assert.that()
+	}
+	
+	
+}
